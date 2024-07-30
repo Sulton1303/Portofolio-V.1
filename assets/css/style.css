@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;500;600;700;800;900&display:swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oxygen", sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s; 
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.3s;
+}
+
+.navbar:hover,
+.navbar a.active {
+    color: blueviolet;
+}
+
+.home {
+    margin-top: 0;
+    height: 100vh;
+    background: linear-gradient(-90deg, rgb(54, 1, 54) 65%, rgb(73, 40, 104) 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-image img {
+    position: relative;
+    max-width: 400px;
+    border-radius: ;
+}
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background: rgb(54, 1, 54);
+    border-radius: 20%;
+    border: 12.5px solid white;
+    outline: 12.5px solid rgb(54, 1, 54);
+}
+
+.home-content {
+    max-width: 600px;
+    color: white;
+    text-align: right;
+}
+
+.home-content h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.home-content h3 {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px white;
+    background-image: linear-gradient(rgb(187, 27, 187), rgb(187, 27, 187) );
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    animation: animateText 6s linear infinite;
+    background-position: -410px 0;
+}
+
+@keyframes animateText {
+    0%, 
+    95%, 
+    100% {
+        background-position: -410px 0;
+    }
+    65%, 
+    85% {
+        background-position: 0, 0;
+    }
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.home-medsos {
+    margin: 25px 0 40px;
+}
+
+.home-medsos a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font: 20px;
+    color: blueviolet;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.home-medsos a:hover {
+    background: purple;
+    color: white;
+    border-color: purple;
+    box-shadow: 0 0 10px purple;
+}
+
+.btn {
+    padding: 12px 35px;
+    background: purple;
+    border-radius: 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px purple;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="home"] {
+      width: 100%;
+    }
+}
